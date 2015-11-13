@@ -7,3 +7,20 @@ def display_board(board)
 end
 
 # code your move method here!
+def move(board, posit, choice = "X")
+  posit = posit.to_i
+  posit -= 1
+  board[posit] = choice
+  display_board(board)
+
+
+
+
+
+
+
+
+
+
+
+end 
