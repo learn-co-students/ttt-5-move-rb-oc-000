@@ -8,11 +8,5 @@ end
 
 # code your move method here!
 def move(board, input, players_character="X")
- input.to_i
- input=input-1
-  update_array(board, input, players_character)
-end
-
-def update_array(array, position, value)
-  array[position] = value
+  board[input.to_i-1] = players_character
 end
